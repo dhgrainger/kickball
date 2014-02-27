@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+  <title>League of Cool Kickball Professionals (LACKP)</title>
+  <link rel="stylesheet" href="kickball.css">
+  </head>
+
+  <body>
+
+    <h1><%= @players[0][3] %></h1>
+
+    <table>
+	    <tr>
+	    	<th>Name</th>
+	    	<th>Position</th>
+	    </tr>
+	    	
+	    
+		    <% @players.each do |player| %>
+		    
+		    	<tr>
+		    		<td><%= player[0] + " " + player[1] %></td>
+		    		<td><%= player[2] %></td>
+	    		</tr>
+	    		
+	   			<% end %>    	
+	</table>
+	<a href = "http://localhost:4567">HOME</a>
+  </body>
+</html>
